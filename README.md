@@ -6,4 +6,4 @@
 
 
 
-![cpu](60734315382764050.jpg)
+![cpu](https://raw.githubusercontent.com/CowboyZJC/XJTU-computer_organization_experiment/main/60734315382764050.jpg)
