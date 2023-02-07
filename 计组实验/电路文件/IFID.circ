@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <main name="IF_ID"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="IF_ID">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="IF_ID"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="2048000.0"/>
+    <appear>
+      <rect fill="#0600ff" height="360" stroke="#000000" width="59" x="71" y="90"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="61" y="133">IR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="73" y="75">RESET</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="79" y="458">CLK</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="56" y="412">NPC</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="149" y="412">NPC1</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="141" y="134">IR1</text>
+      <text dominant-baseline="central" fill="#c8e800" font-family="SansSerif" font-size="12" text-anchor="middle" x="101" y="253">IF/ID</text>
+      <circ-anchor facing="east" x="130" y="120"/>
+      <circ-port dir="in" pin="270,680" x="100" y="450"/>
+      <circ-port dir="in" pin="280,900" x="100" y="90"/>
+      <circ-port dir="in" pin="330,360" x="70" y="120"/>
+      <circ-port dir="in" pin="330,580" x="70" y="400"/>
+      <circ-port dir="out" pin="830,360" x="130" y="120"/>
+      <circ-port dir="out" pin="830,580" x="130" y="400"/>
+    </appear>
+    <comp lib="0" loc="(270,680)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(280,900)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="RESET"/>
+    </comp>
+    <comp lib="0" loc="(330,360)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="IR"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(330,580)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="NPC"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(540,380)" name="Constant"/>
+    <comp lib="0" loc="(540,600)" name="Constant"/>
+    <comp lib="0" loc="(830,360)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="IR1"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(830,580)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="NPC1"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(540,330)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(540,550)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="width" val="32"/>
+    </comp>
+    <wire from="(270,680)" to="(510,680)"/>
+    <wire from="(280,900)" to="(570,900)"/>
+    <wire from="(330,360)" to="(540,360)"/>
+    <wire from="(330,580)" to="(540,580)"/>
+    <wire from="(510,400)" to="(510,620)"/>
+    <wire from="(510,400)" to="(540,400)"/>
+    <wire from="(510,620)" to="(510,680)"/>
+    <wire from="(510,620)" to="(540,620)"/>
+    <wire from="(570,420)" to="(570,490)"/>
+    <wire from="(570,490)" to="(650,490)"/>
+    <wire from="(570,640)" to="(570,900)"/>
+    <wire from="(570,900)" to="(650,900)"/>
+    <wire from="(600,360)" to="(830,360)"/>
+    <wire from="(600,580)" to="(830,580)"/>
+    <wire from="(650,490)" to="(650,900)"/>
+  </circuit>
+</project>
